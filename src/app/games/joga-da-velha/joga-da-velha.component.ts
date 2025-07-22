@@ -1,5 +1,6 @@
 import { NgFor, NgIf } from '@angular/common';
 import { Component } from '@angular/core';
+import confetti from 'canvas-confetti';
 
 @Component({
   selector: 'app-joga-da-velha',
@@ -38,6 +39,7 @@ makeMove(row: number, line: number){
     this.verifyEndGame()
 
     if(this.winner){
+      this.shootConfetti()
       console.log(this.currentPlayer  + " venceu a partida!")
       return
     } else if(this.gameover){
@@ -80,6 +82,14 @@ changePlayer(){
     if(this.board.flat().every(cell => cell != "")){ // true se não há posições livres;
       this.gameover = true;
     }
+  }
+
+  shootConfetti(){
+    confetti({
+      particleCount: 100,
+      spread: 70,
+      origin: { y: 0.6 }
+  });
   }
 
 }

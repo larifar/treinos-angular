@@ -1,0 +1,32 @@
+.container-minigames{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+h1{
+  font-size: 26px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+li{
+  margin: 0 1rem;
+  list-style: none;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 1rem 1.5rem;
+  background-color: antiquewhite;
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+li:hover{
+  color: brown;
+  background-color: cadetblue;
+}
+
