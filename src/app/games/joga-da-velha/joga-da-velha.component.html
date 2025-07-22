@@ -1,0 +1,18 @@
+<div class="container-center">
+  <div>
+    <div class="title">
+    <h1>Jogo da Velha</h1>
+    <h2 *ngIf="!winner && !gameover"> Jogador atual: {{currentPlayer}}</h2>
+    <h2 *ngIf="winner"> Jogador Vencedor: {{currentPlayer}}</h2>
+    <h2 *ngIf="gameover && !winner"> Empate!</h2>
+  </div>
+
+  <div class="grid-velha">
+    @for (row of board; track $index) {
+      <span class="item" *ngFor="let item of row; let i = index" (click)="makeMove($index, i)"> {{item}}</span>
+    }
+  </div>
+  </div>
+
+</div>
+

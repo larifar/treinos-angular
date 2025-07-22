@@ -1,0 +1,34 @@
+.container-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-velha{
+  width: 500px;
+  height: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  gap: 15px;
+  align-items: center;
+  background-color: aqua;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
