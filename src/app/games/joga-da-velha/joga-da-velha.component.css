@@ -1,3 +1,17 @@
+.container-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .grid-velha{
   width: 500px;
   height: 500px;
